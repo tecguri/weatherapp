@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.card-body {
+  background-color: #bc8f8f24;
+}
+
+.card-body .container, .sevenday_forcast {
+  color: #473535;
+}
+
+.main_card {
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.card-container .card {
+  background-color: #3b3a3a;
+  border: 1px solid #525252;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 300px;
+  flex: 0 0 auto;
+  font-size: 12px !important;
+}
+
+
+.card-container .card h5{
+  color: #34f6d6ab;
+}
+
+.card_section_2 {
+  display: flex;
+}
+
+.card_section_2 p {
+  margin: 8px;
+}
+
+.card_section_2 small {
+  margin-top: 5px;
+}
+
+
+
+
+
+.airIndex {
+  background-color: #d0bebe;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 0px black;
+}
+
+.airIndex p:first-child {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.airIndex p:last-child {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+.futureDays {
+  display: flex;
+  overflow-x: auto;
+}
+
+.futureDays .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.futureDays .col:first-child {
+  margin-left: 5px;
+}
+
+.futureDays .col {
+  background-color: #d0bebe;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0px black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.futureDays .col h5 {
+  margin-top: 10px;
+}
+
+.futureDays .card_section_2:last-child {
+  margin-bottom: 10px;
+}
+
+.sevenday_forcast {
+  text-align: left;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+.map-container-2{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-2 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.gmnoprint {
+  display: none !important;
+}
