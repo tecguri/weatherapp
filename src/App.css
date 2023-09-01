@@ -11,7 +11,6 @@
 }
 
 .main_card {
-  max-width: 500px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -140,4 +139,79 @@
 
 .gmnoprint {
   display: none !important;
+}
+
+
+
+
+
+
+
+.gradient-range {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to left, #ff0000, #ff9900, #33cc33, #0099ff);
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.gradient-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.gradient-range::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+
+
+
+
+.weatherDescription {
+  text-align: left;
+  border: 10px solid #d0bebeb5;
+  padding: 0px;
+  border-radius: 5px;
+  border-top: 5px solid #d0bebeb5;
+  box-sizing: border-box;
+}
+
+.weatherDescriptionP1 {
+  background: #d0bebeb5;
+  padding-bottom: 3px;
+}
+
+.weatherDescriptionP2 {
+  margin-left: 5px;
+}
+
+#mapDiv div:first-child {
+  opacity: 7;
+}
+
+
+
+
+
+@media (min-width: 600px) {
+  .main_card {
+    margin-top: 10px;
+    max-width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
