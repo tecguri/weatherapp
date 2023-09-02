@@ -14,7 +14,7 @@ import moment from 'moment';
 export default function Weatherforecast() {
 
     const[weatherInfo, setWeatherInfo] = useState([]);
-    const [search, setSearch] = useState("");
+    const [search, setSearch] = useState("Punjab");
     const [isUpdate, setIsUpdate] = useState(false);
     // const [isVisible, setIsVisible] = useState(true);
 
@@ -33,9 +33,11 @@ export default function Weatherforecast() {
     }, [weatherInfo]);
 
     useEffect(()=>{
-        setSearch(search);
-        // getItemFromLocalStorage();
-        console.log(search);
+        if (search.includes("undefined")) {
+            setSearch("Punjab");
+        }else{
+            setSearch(search);
+        }
     }, [isUpdate]);
     
    
@@ -101,8 +103,9 @@ export default function Weatherforecast() {
 
 
     const getWeatherInfo = (e) => {
-
-        console.log("eeeeeee",e)
+        if (e.includes("undefined")) {
+            e = "Punjab 160055"
+        }
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
